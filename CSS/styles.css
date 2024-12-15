@@ -1,0 +1,483 @@
+﻿body
+{
+    margin:0;
+    background-color: black;
+    color:white;
+    height: 1000vh;
+    
+}
+
+nav {
+
+    display: flex;
+    position:relative;
+    justify-content: start;
+    flex-direction:row;
+    
+    padding: 15px 20px;
+    background-color: red; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content img 
+{
+    height: 40px; 
+    width: 60px;
+
+    margin-right:15px;
+    transition:transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+.dropdown-content img:hover
+{
+    transform: scale(1.1);
+    opacity:0.8;
+}
+
+
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    top: 18px;
+    left:5px;
+    right:5px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    
+    
+}
+.inventory
+{
+    width: 60px;
+}
+
+
+.inventory a {
+    font-family: 'Arial', sans-serif;
+    
+    font-size: 10px;
+    
+    color: #AAAAAA;
+    
+    text-align: start;
+    
+    padding: 5px 0px;
+
+    margin:0px;
+
+    display: block;
+}
+
+
+
+ 
+.dropdown:hover .dropdown-content, .dropdown-content:hover
+{
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+
+
+
+header nav ul
+{
+    margin:0;
+    list-style-type:none;
+
+}
+
+nav .menu
+{
+    display:flex;
+    gap:10px;
+    
+}
+
+nav .menu-item
+{
+    position:relative;
+}
+
+nav ul li{
+
+    display:inline-block;
+    width:fit-content;
+    
+}
+
+
+.discount
+{
+    color:white;
+    background-color:red;
+}    
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 15px; 
+    position: relative; 
+    transition: color 0.3s ease;
+}
+
+    nav ul li a:hover {
+        color: black;
+    }
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff5722;
+    transition: width 0.3s ease;
+}
+
+.hero
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width:60%;
+    margin-left:25%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color:black;
+    margin-top:1%;
+    
+}
+
+.hero p
+{
+    padding:0px;
+    margin:5px;
+}
+
+
+.background-img
+{
+    background-image: url('https://s18390.pcdn.co/wp-content/uploads/2023/05/AdobeStock_593542805.jpg');
+    background-size:cover;
+    height:100vh;
+    color:orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:10vh;
+    
+    
+}
+
+
+
+
+.hero .button
+{
+    background-color:#ffa550;
+    border-radius:15%;
+    border:1px solid whitesmoke;
+    border:none;
+    padding:5px;
+    margin-top:25%;
+    margin-left:45%;
+    cursor: pointer;
+}
+
+.hero .button:hover
+{
+    background-color: orange;
+}
+
+.hero .button a
+{
+    text-decoration: none;
+
+}
+.offers
+{
+    
+    display:flex;
+    flex-direction: column;
+    margin-left:1%;
+}
+
+.offers-new,.offers-discount
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.offers-discount
+{
+    margin-top:0;
+}
+.offers-item
+{
+    display:flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top:2%;
+    width:200px;
+    position: relative;
+
+    
+}
+
+.offer-img img
+{
+    position:relative;
+    width:200px;
+    height:150px;
+}
+
+
+.offer-desc
+{
+    position:absolute;
+    background-color: #243136;
+    bottom:-40px;
+    width:170px;
+    height: auto;
+    padding:15px;
+    
+}
+.model
+{
+    position:relative;
+    font-size:10px;
+    font-weight: bold;
+}
+
+.year-manf
+{
+    position:absolute;
+    top:-13px;
+    font-size:8px;
+    left:1px;
+    margin-bottom:35px;
+    color:#AAAAAA;
+}
+.offers h3
+{
+    margin-left:3%;
+}
+
+.category::before
+{
+    content: "Категория:";
+    color:#AAAAAA;
+    margin-left:5%;
+    
+}
+
+.category
+{
+    position:absolute;
+    padding:3px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size:8px;
+    bottom:-70px;
+    width:193px;
+    height:7vh;
+    background-color: #1d282c;
+}
+
+.category span
+{
+    margin-left:1%;
+}
+
+
+.new
+{
+    position: absolute;
+    background-color: red;
+    top:-18px;
+    
+}
+
+.offers-item:hover
+{
+    cursor: pointer;
+}
+
+footer
+{
+    margin-top:15%;
+    border-top: 1px solid white;
+    
+    
+
+}
+
+footer .main
+{
+    font-size:10px;
+    list-style-type: none;
+    position:relative;
+    margin:0;
+    padding:0;
+    border-bottom: 1px solid white;
+    
+}
+
+footer .main > li
+{
+    margin-left:0;
+    
+    display: inline;
+    margin-right:30%;
+    
+   
+}
+
+footer .main > li span
+{
+    margin-left:2%;
+}
+
+footer .secondary
+{
+    
+    list-style-type: none;
+    padding:5px;
+    position:absolute;
+    left:10px;
+    top:15px;
+    width: 200px;
+
+}
+
+
+footer .secondary li
+{
+    margin-top:7%;
+    font-size:8px;
+    text-align: start;
+    
+}
+footer h5
+{
+    margin-left: 3%;
+}
+
+#location ::before
+{
+    content:"/e915;";
+    font-size:30px;
+    
+}
+
+.socials
+{
+    width:10px;
+}
+
+
+
+.information .secondary
+{
+    position:absolute;
+}
+
+.socials
+{
+    position: relative;
+}
+
+.socials .secondary
+{
+    position:absolute;
+    left:-5px;
+    top:15px;
+    padding:0;
+    font-weight: bold;
+    
+}
+
+.socials-img,.partners-img
+{
+    width:20px;
+    margin-right:3%;
+}
+
+.social,.partner
+{
+    display:flex;
+    justify-content: baseline;
+}
+
+
+.copyright
+{
+    display:flex;
+    justify-content: center;
+    margin-top:20%;
+    font-size:10px;
+    color:#AAAAAA;
+    border-top:1px solid white;
+    flex-direction: column;
+
+    border-bottom:1px solid white;
+
+    
+}
+
+.copyright span
+{
+    display: flex;
+    justify-content: center;
+    margin-top:4px;
+}
+
+.copyright p
+{
+    margin:3% 3%;
+    
+}
+
+
+
+#to-top 
+{
+    padding:15px;
+    font-size:14px;
+    margin-left:1%;
+    margin-top:15%;
+}
+
+ #to-top :visited
+{
+    color:red;
+    
+}
+
+ a
+{
+    text-decoration: underline;
+    color:white;
+    
+}
+
+li a:visited
+{
+    background-color: blue;
+}
+
+
+.new-offers
+{
+    margin-top:0%;
+}
